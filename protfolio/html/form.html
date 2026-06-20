@@ -109,33 +109,94 @@
         <!--New fieldset adding-->
         <fieldset>
             <legend>Honourium and Memorial Donation Infos</legend>
-            <tr>
-                <td>
-                    <label for="i would to like to make this donation">I would to like to make this donation</label>
-                </td>
-            </tr>
+            <table>
+    <tr>
+      <td class="label">I would like to make this donation</td>
+      <td>
+        <label><input type="radio" name="honor_type"> To Honor</label><br>
+        <label><input type="radio" name="honor_type"> In Memory of</label>
+      </td>
+    </tr>
+    <tr>
+      <td class="label">Name</td>
+      <td><input type="text" class="wide" name="honor_name"></td>
+    </tr>
+    <tr>
+      <td class="label">Acknowledge Donation to</td>
+      <td><input type="text" class="wide" name="acknowledge_name"></td>
+    </tr>
+    <tr>
+      <td class="label">Address</td>
+      <td><input type="text" class="wide" name="honor_address"></td>
+    </tr>
+    <tr>
+      <td class="label">City</td>
+      <td><input type="text" class="wide" name="honor_city"></td>
+    </tr>
+    <tr>
+      <td class="label">State</td>
+      <td>
+        <select class="wide" name="honor_state">
+          <option>Select a State</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td class="label">Zip</td>
+      <td><input type="text" class="wide" name="honor_zip"></td>
+    </tr>
+  </table>
 
-            <tr>
-                <td>
-                    <input type="radio" name="donationtype" value="in honour of">In Honour of
-                </td>
-                <td>
-                    <input type="radio" name="donationtype" value="in memory of">In Memory of
-                </td>
-            </tr>
+  <h2 class="section-title">Additional Information</h2>
 
+  <div class="additional-info">
+    <p>Please enter your name, company or organization as you would like it to appear in our publications:</p>
 
-            
-            
-            
-            
-            
-            
-            
-                
-        </fieldset>
-        <!--New Fieldset here-->
+    <table>
+      <tr>
+        <td class="label">Name</td>
+        <td><input type="text" class="wide" name="publication_name"></td>
+      </tr>
+    </table>
 
+    <div class="checkbox-line"><label><input type="checkbox"> I would like my gift to remain anonymous.</label></div>
+    <div class="checkbox-line"><label><input type="checkbox"> My employer offers a matching gift program. I will mail the matching gift form.</label></div>
+    <div class="checkbox-line"><label><input type="checkbox"> Please save the cost of acknowledging this gift by not mailing a thank you letter.</label></div>
+
+    <table>
+      <tr>
+        <td class="label">Comments<br><span class="donation-note">(Please type any questions or feedback here)</span></td>
+        <td><textarea class="comments" name="comments"></textarea></td>
+      </tr>
+    </table>
+
+    <table>
+      <tr>
+        <td class="label">How may we contact you?</td>
+        <td>
+          <div class="checkbox-line"><label><input type="checkbox"> E-mail</label></div>
+          <div class="checkbox-line"><label><input type="checkbox"> Postal Mail</label></div>
+          <div class="checkbox-line"><label><input type="checkbox"> Telephone</label></div>
+          <div class="checkbox-line"><label><input type="checkbox"> Fax</label></div>
+        </td>
+      </tr>
+    </table>
+
+    <p>I would like to receive newsletters and information about special events by:</p>
+    <div class="checkbox-line" style="margin-left:230px;"><label><input type="checkbox"> E-mail</label></div>
+    <div class="checkbox-line" style="margin-left:230px;"><label><input type="checkbox"> Postal Mail</label></div>
+
+    <div class="checkbox-line"><label><input type="checkbox"> I would like information about volunteering with the organization.</label></div>
+  </div>
+
+  <hr class="full">
+
+  <div class="buttons">
+    <button type="reset">Reset</button>
+    <button type="submit">Continue</button>
+  </div>
+
+</div>
        
         
     </form>   
