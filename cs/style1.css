@@ -1,0 +1,15 @@
+body{
+    background-color: #e6e1e1;
+    h1{
+        color: #141212;
+        text-align: left;
+        text-decoration: underline;
+
+    }
+    p{
+        color:#121313;
+        text-align: left;
+        line-height: 1.6;
+        
+    }
+}
