@@ -1,26 +1,52 @@
-<!DOCTYPE html>
 <html>
+
 <head>
-    <title>Lab Task 05</title>
+
+    <script>
+        document.getElementById("FORM").addEventListener("submit", function (event) {
+
+                var fname = document.getElementById("fname").value;
+                var lname = document.getElementById("lname").value;
+                var email = document.getElementById("email").value;
+                var phone = document.getElementById("phone").value;
+                var address = document.getElementById("address").value;
+
+
+                if (fname == "" || lname == "" || email == "" || phone == "" || address == "") {
+                    alert("All fields must be filled out");
+                    event.preventDefault(); // Prevent form submission
+
+                }
+
+                else if (email.indexOf("@") == -1 || email.indexOf(".") == -1) {
+                    alert("Please enter a valid email address");
+                    event.preventDefault();
+                }
+
+                else if (phone.length != 11 || isNaN(phone)) {
+                    alert("Please enter a valid 11-digit phone number");
+                    event.preventDefault();
+                }
+            });
+
+    </script>
+
 </head>
 
-<body>
 
-    <h2>JavaScript Form Validation Using DOM</h2>
+<body onload="validateForm()">
 
-    <form id="myForm">
+    <form name="myForm" action="/action_page.php" 17 onsubmit="return validateForm()" method="post">
+        First Name: <input type="text" id="fname" name="fname"><br>
+        Last Name: <input type="text" id="lname" name="lname"><br>
+        Email: <input type="email" id="email" name="email"><br>
+        Phone: <input type="tel" id="phone" name="phone"><br>
+        Address: <input type="text" id="address" name="address"><br>
 
-        <label>Name:</label><br>
-        <input type="text" id="name"><br><br>
-
-        <label>Email:</label><br>
-        <input type="text" id="email"><br><br>
 
         <input type="submit" value="Submit">
-
     </form>
 
-    <script src="script.js"></script>
-
 </body>
-</html>
+
+</html
