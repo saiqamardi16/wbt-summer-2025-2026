@@ -1,0 +1,42 @@
+body{
+    background-color: #e6e1e1;
+    h1{
+    color: #6b285c;
+    text-align: left;
+    background-color:rgb(233, 229, 238);
+
+}
+h2{
+    color: #6b285c;
+    text-align: left;
+    background-color:rgb(233, 229, 238);
+    text-decoration: underline;
+    text-indent: 0.5px;
+}
+}
+h3{
+    color: #121012;
+    text-align: left;
+    background-color:rgb(233, 229, 238);
+    text-decoration: underline;
+    text-indent: 0.5px;
+}
+
+p{
+    color: #121012;
+    text-align: left;
+    background-color:rgb(233, 229, 238);
+    text-indent: 0.5px;
+}
+ul{
+    color: #121012;
+    text-align: left;
+    background-color:rgb(233, 229, 238);
+    text-indent: 0.5px;
+}
+p{
+    color: #121012;
+    text-align: left;
+    background-color:rgb(233, 229, 238);
+    text-indent: 0.5px;
+}
