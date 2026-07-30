@@ -66,6 +66,50 @@ else
 {
     echo $c ="Largest Number = ";
 }
+<!--5-->
 
+for($i = 10; $i <= 100; $i++)
+{
+    if($i % 2 != 0)
+    {
+        echo $i . "<br>";
+    }
+}
+
+<!--6-->
+$numbers = array(10, 15, 20, 25, 30, 35);
+
+$search = 25;
+$found = false;
+
+for($i = 0; $i < count($numbers); $i++)
+{
+    if($numbers[$i] == $search)
+    {
+        $found = true;
+        break;
+    }
+}
+
+if($found)
+{
+    echo $search . " Found";
+}
+else
+{
+    echo $search . " Not Found";
+}
+
+?>
+<!--7-->
+
+for($i = 1; $i <= 3; $i++)
+{
+    for($j = 1; $j <= $i; $j++)
+    {
+        echo "*";
+    }
+    echo "<br>";
+}
 
 ?>
