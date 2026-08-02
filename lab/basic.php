@@ -72,11 +72,7 @@ for($i = 10; $i <= 100; $i++)
 {
     if($i % 2 != 0)
     {
-<<<<<<< HEAD
         echo $i  "<br>";
-=======
-        echo $i . "<br>";
->>>>>>> 422378c99442a65102757287d373fc501042b96f
     }
 }
 
@@ -97,7 +93,6 @@ for($i = 0; $i < count($numbers); $i++)
 
 if($found)
 {
-<<<<<<< HEAD
     echo $search = " Found";
 }
 else
@@ -106,16 +101,6 @@ else
 }
 
 
-=======
-    echo $search . " Found";
-}
-else
-{
-    echo $search . " Not Found";
-}
-
-?>
->>>>>>> 422378c99442a65102757287d373fc501042b96f
 <!--7-->
 
 for($i = 1; $i <= 3; $i++)
