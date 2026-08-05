@@ -2,7 +2,7 @@
 
 // 1. Calculate Simple Interest
 
-echo " 1. Simple Interest \n";
+echo " 1. Simple Interest ";
 
 
 $principal = 5000;
@@ -12,15 +12,15 @@ $time = 3;
 $simpleInterest = ($principal * $rate * $time) / 100;
 
 
-echo "Principal Amount: $principal\n";
-echo "Rate of Interest: $rate%\n";
-echo "Time Period: $time years\n";
-echo "Simple Interest: $simpleInterest\n\n";
+echo "Principal Amount: $principal";
+echo "Rate of Interest: $rate%";
+echo "Time Period: $time years";
+echo "Simple Interest: $simpleInterest";
 
 
 // 2. Check Prime Number
 
-echo "2. Prime Number Check\n";
+echo "2. Prime Number Check";
 
 
 $number = 17;
@@ -38,11 +38,11 @@ if ($number < 2) {
     }
 }
 
-echo "Number to check: $number\n";
+echo "Number to check: $number";
 if ($isPrime) {
-    echo "$number is a Prime number.\n\n";
+    echo "$number is a Prime number";
 } else {
-    echo "$number is NOT a Prime number.\n\n";
+    echo "$number is NOT a Prime number";
 }
 
 
@@ -59,13 +59,13 @@ for ($i = 1; $i <= $num; $i++) {
     $factorial *= $i;
 }
 
-echo "Given Number: $num\n";
-echo "Factorial of $num is: $factorial\n\n";
+echo "Given Number: $num";
+echo "Factorial of $num is: $factorial";
 
 
 // 4. Sum and Average of Array
 
-echo "========== 4. Sum and Average of Array ==========\n";
+echo " 4. Sum and Average of Array ";
 
 
 $numbers = [10, 20, 30, 40, 50];
@@ -86,9 +86,9 @@ foreach ($numbers as $value) {
     echo $value . " ";
 }
 echo "\n";
-echo "Total Elements: $count\n";
-echo "Sum of all elements: $sum\n";
-echo "Average of all elements: $average\n\n";
+echo "Total Elements: $count";
+echo "Sum of all elements: $sum";
+echo "Average of all elements: $average";
 
 
 // 5. Print Pattern using Nested Loop
@@ -99,11 +99,11 @@ echo "5. Pattern ";
 $rows = 4;
 
 
-echo "Pattern:\n";
+echo "Pattern:";
 for ($i = 1; $i <= $rows; $i++) {
     for ($j = 1; $j <= $i; $j++) {
         echo $i . " ";
     }
-    echo "\n";
+    echo ;
 }
 ?>
